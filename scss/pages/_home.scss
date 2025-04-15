@@ -1,0 +1,246 @@
+.grow {
+  padding-top: 12rem;
+  padding-bottom: 12rem;
+}
+.grow__container {
+  display: flex;
+  align-items: center;
+}
+.grow__image {
+  margin-right: 8rem;
+  border-radius: $radius-8;
+}
+.grow__text__contant {
+  width: 530px;
+}
+.grow__title {
+  font-family: "Martian Mono";
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 130%;
+  letter-spacing: -2px;
+  margin-bottom: 3.4rem;
+  color: $neutral-900;
+}
+.grow__List {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.grow__item {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  width: 431px;
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 140%;
+  letter-spacing: -0.5px;
+  color: $neutral-700;
+  //   background-image: url(../../images/icon-check.svg);
+  //   background-repeat: no-repeat;
+  //   background-position: center left -20px;
+}
+
+.club {
+  margin-bottom: 12rem;
+}
+
+.club__container {
+  display: flex;
+  align-items: center;
+  background-image: url(../../images/logos-tech.svg);
+  background-repeat: no-repeat;
+  background-position: center bottom 31px;
+}
+
+.club__text__contant {
+  margin-right: 8rem;
+}
+.club__title {
+  font-family: "Martian Mono";
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 130%;
+  letter-spacing: -2px;
+  margin-bottom: 2.4rem;
+  background-image: url(../../images/pattern-circle.png);
+  background-repeat: no-repeat;
+  background-position: bottom left 142px;
+}
+
+.club__desc {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 140%;
+  letter-spacing: -0.5px;
+  color: $neutral-700;
+
+  span {
+    font-weight: 600;
+  }
+}
+.club__image {
+  border-radius: $radius-8;
+}
+
+.tech {
+  margin-bottom: 12rem;
+}
+.tech__container {
+  padding: 8rem 6rem;
+  background-color: $neutral-100;
+  background-image: url(../../images/pattern-light-bg.svg);
+  background-repeat: no-repeat;
+}
+.tech__title {
+  margin-right: auto;
+  margin-left: auto;
+  font-family: "Martian Mono";
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 120%;
+  text-align: center;
+  letter-spacing: -4%;
+  margin-bottom: 8rem;
+}
+.tech__list {
+  display: flex;
+  justify-content: center;
+  gap: 48px;
+}
+.tech__item {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  background-image: url(../../images/pattern-arrow.svg);
+  background-repeat: no-repeat;
+  background-position: top right;
+
+  &:last-child {
+    background-image: none;
+  }
+}
+.tech__num {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 40px;
+  height: 40px;
+  font-family: Martian Mono;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  letter-spacing: -1%;
+  border: 2px solid $neutral-900;
+  border-radius: $radius-4;
+}
+.tech__text {
+  font-family: "Martian Mono";
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 130%;
+  letter-spacing: -1%;
+}
+
+.options {
+  margin-bottom: 12rem;
+}
+.options__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.options__title {
+  font-family: "Martian Mono";
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 130%;
+  letter-spacing: -2px;
+  text-align: center;
+  margin-bottom: 6.4rem;
+  color: $neutral-900;
+}
+.options__list {
+  display: flex;
+  gap: 24px;
+}
+.options__item {
+  &:nth-child(1),
+  &:nth-child(3) {
+    border: 1px solid $neutral-200;
+    padding: 2.4rem;
+  }
+  &:nth-child(2) {
+    border: 1px solid $neutral-200;
+    padding: 4rem 2.4rem;
+  }
+}
+hr {
+  margin-bottom: 2.4rem;
+}
+
+
+.option__name {
+  font-family: "Martian Mono";
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 110.00000000000001%;
+  letter-spacing: -1px;
+  color: $neutral-900;
+  margin-bottom: 2.4rem;
+}
+.option__price__contant {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 2.4rem;
+}
+.option__price {
+  font-family: "Martian Mono";
+  font-weight: 600;
+  font-size: 34px;
+  line-height: 130%;
+  letter-spacing: -1px;
+  color: $neutral-900;
+}
+.option__price:last-child{
+  margin-bottom: 2.4rem;
+}
+.option__price--duration {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 140%;
+  letter-spacing: -0.5px;
+  color: $neutral-700;
+}
+.option__features {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.option__features__item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  p {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 140%;
+    letter-spacing: -0.5px;
+    color: $neutral-700;
+  }
+}
+
+.features__btn {
+  font-family: "Martian Mono";
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 130%;
+  letter-spacing: -1px;
+  color: $neutral-900;
+  padding: 2rem 7.5rem;
+}
