@@ -1,3 +1,59 @@
+/* martian-mono-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Martian Mono";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/martian-mono-v3-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* martian-mono-600 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Martian Mono";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/martian-mono-v3-latin-600.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* martian-mono-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Martian Mono";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/martian-mono-v3-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* inter-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/inter-v18-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* inter-600 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/inter-v18-latin-600.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* inter-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/inter-v18-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* fira-code-600 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Fira Code";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/fira-code-v22-latin-600.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
 *,
 *::after,
 *::before {
@@ -32,17 +88,53 @@ body {
   display: flex;
   flex-direction: column;
   height: 100%;
+  font-family: "Inter";
 }
 
 h1 {
   margin: 0;
 }
-
+main {
+  flex-grow: 1;
+}
 .container {
   width: 100%;
-  max-width: 1200px;
+  max-width: 1230px;
   margin-left: auto;
-  margin-bottom: auto;
-  padding-left: 30px;
-  padding-right: 30px;
+  margin-right: auto;
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+.btn {
+  padding-top: $spacing-250;
+  padding-right: $spacing-300;
+  padding-bottom: $spacing-250;
+  padding-left: $spacing-300;
+  border-radius: 8px;
+  background-color: transparent;
+  transition: 0.3s;
+}
+.primary-btn {
+  background-color: $light-salmon-50;
+  border: 2px solid $neutral-900;
+
+  &:hover {
+    background: linear-gradient(90deg, #ffe2d1 0%, #fff5ef 100%);
+  }
+
+  &:focus {
+    box-shadow: 0px 0px 0px 3px $neutral-900, 0px 0px 0px 5px $neutral-200;
+  }
+}
+
+.alternate-btn {
+  border: 2px solid rgba(255, 255, 255, 1);
+  &:hover {
+    background: linear-gradient(90deg, #385159 0%, #062630 100%);
+  }
+  &:focus {
+    border: 2px solid #ffffff;
+    box-shadow: 0px 0px 0px 5px $neutral-200, 0px 0px 0px 3px $neutral-900;
+  }
 }

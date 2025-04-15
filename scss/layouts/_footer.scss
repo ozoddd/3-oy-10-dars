@@ -1,0 +1,88 @@
+.footer {
+  background-color: $neutral-900;
+  background-image: url(../../images/pattern-dark-bg.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.footer__cta {
+}
+.footer__cta__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 753px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 8rem;
+  padding-bottom: 6.4rem;
+}
+
+.footer__cta__title {
+  font-family: "Martian Mono";
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 130%;
+  letter-spacing: -2px;
+  text-align: center;
+  color: $light-salmon-50;
+  margin-bottom: 4rem;
+}
+
+.footer__cta__btn {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 2.4rem;
+}
+
+.footer__cta__btn__title {
+  font-family: "Martian Mono";
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 130%;
+  letter-spacing: -1px;
+  color: $neutral-0;
+}
+.footer__cta__social-proof {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.developers {
+}
+.cta__stars {
+  display: flex;
+  margin-bottom: 0.4rem;
+}
+.cta__stars__item {
+}
+.cta__joined-text {
+  font-family: Martian Mono;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 120%;
+  letter-spacing: -1px;
+  text-align: center;
+  color: $neutral-100;
+}
+
+.footer-container {
+    border-top: 1px solid $neutral-700;
+  padding-top: 2.4rem;
+  padding-bottom: 2.9rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer___title {
+  font-family: "Martian Mono";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 120%;
+  letter-spacing: -1px;
+  color: $neutral-0;
+}
+.footer__icons {
+  display: flex;
+  gap: 24px;
+}
