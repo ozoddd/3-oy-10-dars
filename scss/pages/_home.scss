@@ -82,6 +82,8 @@
   }
 }
 .club__image {
+  position: relative;
+  z-index: -1;
   border-radius: $radius-8;
 }
 
@@ -91,7 +93,8 @@
 .tech__container {
   padding: 8rem 6rem;
   background-color: $neutral-100;
-  background-image: url(../../images/pattern-light-bg.svg);
+  background-image: url(../../images/pattern-light-bg.svg),url(../../images/pattern-glow.svg);
+  background-position: center,top left 650px;
   background-repeat: no-repeat;
 }
 .tech__title {
@@ -169,20 +172,39 @@
   gap: 24px;
 }
 .options__item {
+  border-radius: $radius-8;
   &:nth-child(1),
   &:nth-child(3) {
     border: 1px solid $neutral-200;
     padding: 2.4rem;
   }
   &:nth-child(2) {
+    background-color: $neutral-100;
     border: 1px solid $neutral-200;
-    padding: 4rem 2.4rem;
+    padding: 4rem 3.6rem;
+    background-image: url(../../images/pattern-glow.svg);
   }
 }
-hr {
-  margin-bottom: 2.4rem;
+.options__item:nth-child(1) {
+  .features__btn {
+    padding: 2rem 4.3rem;
+  }
+}
+.options__item:nth-child(2) {
+  .features__btn {
+    padding: 2rem 7.5rem;
+  }
+}
+.options__item:nth-child(3) {
+  .features__btn {
+    padding: 2rem 6rem;
+  }
 }
 
+hr {
+  margin-bottom: 2.4rem;
+  color: $neutral-200;
+}
 
 .option__name {
   font-family: "Martian Mono";
@@ -206,9 +228,7 @@ hr {
   letter-spacing: -1px;
   color: $neutral-900;
 }
-.option__price:last-child{
-  margin-bottom: 2.4rem;
-}
+
 .option__price--duration {
   font-weight: 400;
   font-size: 20px;
@@ -220,6 +240,7 @@ hr {
   display: flex;
   flex-direction: column;
   gap: 16px;
+  margin-bottom: 3.2rem;
 }
 .option__features__item {
   display: flex;
@@ -242,5 +263,41 @@ hr {
   line-height: 130%;
   letter-spacing: -1px;
   color: $neutral-900;
-  padding: 2rem 7.5rem;
+}
+
+.testimonial{
+  margin-bottom: 12rem;
+}
+
+.testimonial__container {
+  width: 100%;
+  max-width: 970px;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.testimonial__image__wrapper {
+  display: flex;
+  margin-bottom: 3.2rem;
+}
+.testemonials__caption {
+  font-family: "Martian Mono";
+  font-weight: 600;
+  font-size: 34px;
+  line-height: 130%;
+  letter-spacing: -1px;
+  text-align: center;
+  color: $neutral-900;
+  margin-bottom: 3.2rem;
+}
+.testemonials__name {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 140%;
+  letter-spacing: -0.5px;
+  text-align: center;
+  color: $neutral-700;
+
 }

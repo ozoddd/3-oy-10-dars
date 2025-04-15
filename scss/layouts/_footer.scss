@@ -85,4 +85,8 @@
 .footer__icons {
   display: flex;
   gap: 24px;
+
+  & img:hover{
+    opacity: 0.6;
+  }
 }
